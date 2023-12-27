@@ -1,0 +1,284 @@
+.ProductLayout {
+  padding: 80px 40px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.ProductInfoField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+}
+
+.ProductName {
+  width: 100%;
+  color: var(--txt-black, #282828);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 1.2px;
+}
+
+.ProductCostField {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.ProductCostField_Into {
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+}
+
+.ProductCost_New {
+  color: var(--txt-black, #282828);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.ProductCost_Old {
+  color: var(--txt-grey, #8B8B8B);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: line-through;
+}
+
+.DiscountPercent {
+  color: var(--txt-white, #FFF);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  display: flex;
+  padding: 4px 8px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: var(--radius-small, 6px);
+  background: var(--green, #393);
+}
+
+.ToCartAddonField {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+}
+
+.btn_elem {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: var(--radius-small, 6px);
+  background: var(--green, #393);
+  color: var(--txt-white, #FFF);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  z-index: 4;
+  cursor: pointer;
+  border: none;
+}
+
+.btn_elem:hover {
+  background: var(--black, #282828);
+}
+
+.btn_elem_pressed {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: var(--radius-small, 6px);
+  background: var(--white, #FFF);
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.DescriptionField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.DescriptionName {
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.DescriptionImport {
+  height: 227px;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--txt-black, #282828);
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.CounterLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.CounterButton {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+
+.CounterAmount {
+  display: flex;
+  width: 96px;
+  height: 58px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--grey-divider, #DDD);
+  border-bottom: 1px solid var(--grey-divider, #DDD);
+  color: var(--txt-black, #282828);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.ProdImg {
+  width: 780px;
+  height: 572px;
+}
+
+@media screen and (max-width: 400px) {
+  .ProductLayout {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .ProductInfoField {
+    gap: 16px;
+  }
+
+  .ProductName {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .ProductCostField {
+    gap: 12px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+ 
+  .ProductCostField_Into {
+    gap: 16px;
+  }
+
+  .ProductCost_New {
+    font-size: 48px;
+    line-height: 110%;
+  }
+
+  .ProductCost_Old {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .DiscountPercent {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 3px 6px;
+    gap: 8px;
+    border-radius: 4px;
+  }
+
+  .ToCartAddonField {
+    gap: 16px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .btn_elem,
+  .btn_elem_pressed {
+    padding: 12px 24px;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .DescriptionField {
+    gap: 12px;
+  }
+
+  .DescriptionImport {
+    height: auto;
+    text-overflow: initial;
+    white-space: normal;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .CounterLayout {
+    align-items: center;
+  }
+
+  .CounterButton {
+    width: 48px;
+    height: 48px;
+  }
+
+  .CounterAmount {
+    height: 48px;
+    width: 48px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .ProdImg {
+    width: 380px;
+    height: 200px;
+  }
+}

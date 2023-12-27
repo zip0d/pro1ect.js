@@ -1,0 +1,391 @@
+.CartContainer {
+    padding: 80px 40px 80px 40px;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Head {
+    display: flex;
+    width: 1368px;
+    align-items: center;
+    gap: 32px;
+}
+
+.Head_Title {
+    color: var(--txt-black, #282828);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.Btn_Area {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.Head_Line {
+    width: 679px;
+    height: 1px;
+    background-color: #282828;
+}
+
+.Nav_Button {
+    color: var(--txt-grey, #8B8B8B);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126%;
+    text-decoration: none;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--grey-divider, #DDD);
+}
+
+.CartLayout {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.CartList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.CartItem {
+    display: flex;
+    width: 780px;
+    height: 180px;
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: var(--radius-big, 12px);
+    border: 1px solid var(--grey-divider, #DDD);
+}
+
+.CartItem_Info {
+    display: flex;
+    width: 548px;
+    height: 116px;
+    padding: 32px 32px 32px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.CartItem_NameField {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.CartItem_Name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--txt-black, #282828);
+    text-overflow: ellipsis;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.InfoField {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.PriceField {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.ProductCost_New {
+    color: var(--txt-black, #282828);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.ProductCost_Old {
+    color: var(--txt-grey, #8B8B8B);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-decoration-line: line-through;
+}
+
+.CounterLayout {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CounterButton {
+    display: flex;
+    width: 58px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--grey-divider, #DDD);
+    color: #8B8B8B;
+    font-size: 30px;
+}
+
+.CounterAmount {
+    display: flex;
+    width: 96px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--grey-divider, #DDD);
+    border-bottom: 1px solid var(--grey-divider, #DDD);
+    color: var(--txt-black, #282828);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.Order_container {
+    display: flex;
+    width: 484px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+    border-radius: var(--radius-big, 12px);
+    background: var(--light-grey, #F1F3F4);
+}
+
+.Order_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.Order_detailsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.Order_priceBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: stretch;
+}
+
+.Total {
+    color: var(--txt-grey, #8B8B8B);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.Order_price {
+    color: var(--txt-black, #282828);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.Order_name {
+    align-self: stretch;
+    color: var(--txt-black, #282828);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.Order_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.InputsBar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.SingleInput {
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--grey-divider, #DDD);
+    background: var(--white, #FFF);
+    flex: 1 0 0;
+    color: var(--txt-grey, #8B8B8B);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.Order_button {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    border: none;
+}
+
+.Order_buttonPressed {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: 1px solid black;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #FFF);
+    color: var(--txt-white, black);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.NoCartLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.NoCart_button {
+    display: flex;
+    padding: 16px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+/* Submit order */
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.40);
+    z-index: 9999;
+}
+
+.popupContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 484px;
+    padding: 32px;
+    gap: 16px;
+    border-radius: 12px;
+    background: #393;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popupTextField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.popupName {
+    align-self: stretch;
+    color: var(--txt-white, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.popupInfo {
+    color: var(--txt-white, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    white-space: pre-wrap;
+}
+
+.closeButton {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+}

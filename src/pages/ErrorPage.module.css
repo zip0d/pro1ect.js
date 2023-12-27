@@ -1,0 +1,36 @@
+.notFoundPage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+
+    padding: 80px 40px 80px 40px;
+}
+
+.error {
+    background-image: url('../media/404.png');
+    width: 50vw;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.HomeButton{
+    display: flex;
+    padding: 16px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+}
+

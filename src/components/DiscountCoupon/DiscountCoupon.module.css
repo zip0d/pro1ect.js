@@ -1,0 +1,98 @@
+.DiscountCoupon_container {
+    padding: 0 40px 80px 40px;
+    display: flex;
+    max-width: 1440px; 
+    width: 100%; 
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.DiscountCoupon_banner {
+    display: inline-flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: var(--radius-big, 12px);
+    background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
+}
+
+.DiscountCoupon_name {
+    align-self: stretch;
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+}
+
+.DiscountCoupon_body {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.DiscountCoupon_IMG {
+    width: 748px;
+    height: 360px;
+    background-image: url('../../media/imagediscount.png');
+}
+
+.Registration_form {
+    display: flex;
+    max-width: 516px; 
+    width: 100%; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.warning_text {
+    position: absolute;
+    color: rgb(90, 13, 13);
+    font-size: 15px;
+}
+
+
+@media (max-width: 400px) {
+    .DiscountCoupon_container {
+        padding: 0 16px; 
+        align-items: center;
+        align-content: center;
+        gap: 16px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .DiscountCoupon_banner {
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    .DiscountCoupon_name {
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    .DiscountCoupon_body {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .DiscountCoupon_IMG {
+        width: 100%;
+        height: auto;
+    }
+
+    .Registration_form {
+        max-width: 100%; 
+    }
+}

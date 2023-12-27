@@ -1,0 +1,135 @@
+
+
+.ProductsContainer{
+  padding: 80px 40px 80px 40px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.ProductsShownName{
+  align-self: stretch;
+  color: var(--txt-black, #282828);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; 
+}
+
+.FiltrationBar{
+  display: flex;
+  height: 36px;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.SingleFilterBar{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.FilterName{
+  color: var(--txt-black, #282828);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; 
+}
+
+.InputBar{
+  display: flex;
+  width: 112px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+
+.CheckBox{
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+
+.SortList{
+  display: flex;
+  width: 200px;
+  padding: 8px 8px 8px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
+
+  color: var(--txt-black, #282828);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126%; 
+}
+
+
+
+.CardsList{
+  display: flex;
+  width: 1400px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+  .ProductsContainer {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .ProductsShownName {
+    font-size: 36px;
+  }
+
+  .FiltrationBar {
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .SingleFilterBar {
+    gap: 10px;
+  }
+
+  .FilterName {
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+  .InputBar {
+    width: 80px;
+    padding: 4px 8px;
+    gap: 8px;
+  }
+
+  .CheckBox {
+    width: 24px;
+    height: 24px;
+  }
+
+  .SortList {
+    width: 150px;
+    padding: 6px 6px 6px 12px;
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  .CardsList {
+    width: 100%;
+    gap: 16px;
+  }
+}

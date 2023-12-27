@@ -1,0 +1,19 @@
+.SalesList_bar{
+    display: flex;
+    width: 1368px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 400px) {
+    .SalesList_bar {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    }
+    }

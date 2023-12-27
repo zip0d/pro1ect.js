@@ -1,0 +1,27 @@
+.Registration_field{
+  background-color: transparent;
+  width: 452px;
+  color: #FFF;
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  align-self: stretch;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--white, #FFF);
+  margin-top: 16px;
+}
+
+.Registration_field::placeholder{
+  color: #FFF;
+}
+
+@media (max-width: 400px) {
+  .Registration_field {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px; 
+    margin-top: 10px; 
+  }
+}

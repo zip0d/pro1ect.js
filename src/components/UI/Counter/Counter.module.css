@@ -1,0 +1,37 @@
+.CounterLayout{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+}
+
+.CounterButton{
+    display: flex;
+    width: 58px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--grey-divider, #DDD);
+}
+
+.CounterAmount{
+    display: flex;
+    width: 96px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--grey-divider, #DDD);
+    border-bottom: 1px solid var(--grey-divider, #DDD);
+
+    color: var(--txt-black, #282828);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+}

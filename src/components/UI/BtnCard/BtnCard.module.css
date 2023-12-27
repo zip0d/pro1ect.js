@@ -1,0 +1,57 @@
+.btn_elem{
+    display: flex;
+    width: 284px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 16px;
+    
+    bottom: 154px;
+    border-radius: var(--radius-small, 6px);
+    background: var(--green, #393);
+
+    color: var(--txt-white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+
+    z-index: 4;
+    cursor: pointer;
+    border: none;
+}
+
+.btn_elem:hover{
+    background: var(--black, #282828);
+}
+
+.btn_elem_pressed{
+    display: flex;
+    width: 284px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 16px;
+    
+    bottom: 154px;
+    border-radius: var(--radius-small, 6px);
+    border: 1px solid var(--black, #282828);
+    background: var(--white, #FFF);
+
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+
+    z-index: 4;
+    cursor: pointer;
+}
+
+

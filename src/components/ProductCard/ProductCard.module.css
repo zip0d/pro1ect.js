@@ -1,0 +1,131 @@
+.ProductCard_card {
+  width: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: var(--radius-big, 12px);
+  border: 1px solid var(--grey-divider, #DDD);
+}
+
+.ProductCard_IMG {
+  height: 284px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--grey-divider, #DDD);
+}
+
+.ProductCard_InfoBox {
+  display: flex;
+  width: 316px;
+  padding: 0px 32px 32px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ProductCard_Name {
+  width: 252px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--txt-black, #282828);
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-top: 20px;
+}
+
+.ProductCard_PriceBox {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.ProductCard_Price_Actual {
+  color: var(--txt-black, #282828);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.ProductCard_Price_Old {
+  color: var(--txt-grey, #8B8B8B);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: line-through;
+}
+
+.ProductCard_Sale {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--txt-white, #FFF);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 47px;
+  border-radius: var(--radius-small, 6px);
+  background: var(--green, #393);
+}
+
+
+@media (max-width: 400px) {
+  .ProductCard_card {
+    width: 100%;
+    border-radius: var(--radius-medium, 8px);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .ProductCard_IMG {
+    height: 200px;
+  }
+
+  .ProductCard_InfoBox {
+    width: 100%;
+    padding: 0px 16px 16px 16px;
+    gap: 10px;
+  }
+
+  .ProductCard_Name {
+    font-size: 16px;
+    line-height: 110%;
+    margin-top: 10px;
+  }
+
+  .ProductCard_PriceBox {
+    gap: 8px;
+  }
+
+  .ProductCard_Price_Actual {
+    font-size: 28px;
+  }
+
+  .ProductCard_Price_Old {
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+  .ProductCard_Sale {
+    font-size: 16px;
+    width: 32px;
+  }
+}

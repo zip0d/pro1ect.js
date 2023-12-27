@@ -1,0 +1,21 @@
+.CategoriesList_bar {
+    display: flex;
+    max-width: 1368px; 
+    width: 100%;
+    margin: 0 auto; 
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .CategoriesList_bar {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center; 
+    }
+}
